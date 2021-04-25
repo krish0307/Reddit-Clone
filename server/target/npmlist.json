@@ -1,0 +1,1488 @@
+{
+  "name": "Reddit-Clone",
+  "version": "1.0.0",
+  "dependencies": {
+    "@mikro-orm/cli": {
+      "version": "4.5.3",
+      "dependencies": {
+        "@mikro-orm/core": {
+          "version": "4.5.3"
+        },
+        "@mikro-orm/entity-generator": {
+          "version": "4.5.3",
+          "dependencies": {
+            "@mikro-orm/knex": {
+              "version": "4.5.3"
+            },
+            "fs-extra": {
+              "version": "9.1.0"
+            }
+          }
+        },
+        "@mikro-orm/knex": {
+          "version": "4.5.3",
+          "dependencies": {
+            "fs-extra": {
+              "version": "9.1.0"
+            },
+            "knex": {
+              "version": "0.21.19"
+            },
+            "sqlstring": {
+              "version": "2.3.2"
+            }
+          }
+        },
+        "@mikro-orm/migrations": {
+          "version": "4.5.3"
+        },
+        "ansi-colors": {
+          "version": "4.1.1"
+        },
+        "cli-table3": {
+          "version": "0.6.0",
+          "dependencies": {
+            "colors": {
+              "version": "1.4.0"
+            },
+            "object-assign": {
+              "version": "4.1.1"
+            },
+            "string-width": {
+              "version": "4.2.2",
+              "dependencies": {
+                "emoji-regex": {
+                  "version": "8.0.0"
+                },
+                "is-fullwidth-code-point": {
+                  "version": "3.0.0"
+                },
+                "strip-ansi": {
+                  "version": "6.0.0",
+                  "dependencies": {
+                    "ansi-regex": {
+                      "version": "5.0.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fs-extra": {
+          "version": "9.1.0",
+          "dependencies": {
+            "at-least-node": {
+              "version": "1.0.0"
+            },
+            "graceful-fs": {
+              "version": "4.2.6"
+            },
+            "jsonfile": {
+              "version": "6.1.0",
+              "dependencies": {
+                "graceful-fs": {
+                  "version": "4.2.6"
+                },
+                "universalify": {
+                  "version": "2.0.0"
+                }
+              }
+            },
+            "universalify": {
+              "version": "2.0.0"
+            }
+          }
+        },
+        "tsconfig-paths": {
+          "version": "3.9.0",
+          "dependencies": {
+            "@types/json5": {
+              "version": "0.0.29"
+            },
+            "json5": {
+              "version": "1.0.1",
+              "dependencies": {
+                "minimist": {
+                  "version": "1.2.5"
+                }
+              }
+            },
+            "minimist": {
+              "version": "1.2.5"
+            },
+            "strip-bom": {
+              "version": "3.0.0"
+            }
+          }
+        },
+        "yargonaut": {
+          "version": "1.1.4",
+          "dependencies": {
+            "figlet": {
+              "version": "1.5.0"
+            },
+            "parent-require": {
+              "version": "1.0.0"
+            },
+            "chalk": {
+              "version": "1.1.3",
+              "dependencies": {
+                "escape-string-regexp": {
+                  "version": "1.0.5"
+                },
+                "has-ansi": {
+                  "version": "2.0.0",
+                  "dependencies": {
+                    "ansi-regex": {
+                      "version": "2.1.1"
+                    }
+                  }
+                },
+                "ansi-styles": {
+                  "version": "2.2.1"
+                },
+                "strip-ansi": {
+                  "version": "3.0.1",
+                  "dependencies": {
+                    "ansi-regex": {
+                      "version": "2.1.1"
+                    }
+                  }
+                },
+                "supports-color": {
+                  "version": "2.0.0"
+                }
+              }
+            }
+          }
+        },
+        "yargs": {
+          "version": "15.4.1",
+          "dependencies": {
+            "cliui": {
+              "version": "6.0.0",
+              "dependencies": {
+                "string-width": {
+                  "version": "4.2.2"
+                },
+                "strip-ansi": {
+                  "version": "6.0.0"
+                },
+                "wrap-ansi": {
+                  "version": "6.2.0",
+                  "dependencies": {
+                    "ansi-styles": {
+                      "version": "4.3.0",
+                      "dependencies": {
+                        "color-convert": {
+                          "version": "2.0.1",
+                          "dependencies": {
+                            "color-name": {
+                              "version": "1.1.4"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "string-width": {
+                      "version": "4.2.2"
+                    },
+                    "strip-ansi": {
+                      "version": "6.0.0"
+                    }
+                  }
+                }
+              }
+            },
+            "decamelize": {
+              "version": "1.2.0"
+            },
+            "find-up": {
+              "version": "4.1.0",
+              "dependencies": {
+                "locate-path": {
+                  "version": "5.0.0",
+                  "dependencies": {
+                    "p-locate": {
+                      "version": "4.1.0",
+                      "dependencies": {
+                        "p-limit": {
+                          "version": "2.3.0",
+                          "dependencies": {
+                            "p-try": {
+                              "version": "2.2.0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "path-exists": {
+                  "version": "4.0.0"
+                }
+              }
+            },
+            "get-caller-file": {
+              "version": "2.0.5"
+            },
+            "require-directory": {
+              "version": "2.1.1"
+            },
+            "require-main-filename": {
+              "version": "2.0.0"
+            },
+            "set-blocking": {
+              "version": "2.0.0"
+            },
+            "string-width": {
+              "version": "4.2.2"
+            },
+            "which-module": {
+              "version": "2.0.0"
+            },
+            "y18n": {
+              "version": "4.0.3"
+            },
+            "yargs-parser": {
+              "version": "18.1.3",
+              "dependencies": {
+                "camelcase": {
+                  "version": "5.3.1"
+                },
+                "decamelize": {
+                  "version": "1.2.0"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "@mikro-orm/core": {
+      "version": "4.5.3",
+      "dependencies": {
+        "ansi-colors": {
+          "version": "4.1.1"
+        },
+        "clone": {
+          "version": "2.1.2"
+        },
+        "dotenv": {
+          "version": "8.2.0"
+        },
+        "escaya": {
+          "version": "0.0.61"
+        },
+        "fs-extra": {
+          "version": "9.1.0"
+        },
+        "globby": {
+          "version": "11.0.3",
+          "dependencies": {
+            "array-union": {
+              "version": "2.1.0"
+            },
+            "dir-glob": {
+              "version": "3.0.1",
+              "dependencies": {
+                "path-type": {
+                  "version": "4.0.0"
+                }
+              }
+            },
+            "fast-glob": {
+              "version": "3.2.5",
+              "dependencies": {
+                "@nodelib/fs.stat": {
+                  "version": "2.0.4"
+                },
+                "@nodelib/fs.walk": {
+                  "version": "1.2.6",
+                  "dependencies": {
+                    "@nodelib/fs.scandir": {
+                      "version": "2.1.4",
+                      "dependencies": {
+                        "@nodelib/fs.stat": {
+                          "version": "2.0.4"
+                        },
+                        "run-parallel": {
+                          "version": "1.2.0",
+                          "dependencies": {
+                            "queue-microtask": {
+                              "version": "1.2.3"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "fastq": {
+                      "version": "1.11.0",
+                      "dependencies": {
+                        "reusify": {
+                          "version": "1.0.4"
+                        }
+                      }
+                    }
+                  }
+                },
+                "glob-parent": {
+                  "version": "5.1.2",
+                  "dependencies": {
+                    "is-glob": {
+                      "version": "4.0.1",
+                      "dependencies": {
+                        "is-extglob": {
+                          "version": "2.1.1"
+                        }
+                      }
+                    }
+                  }
+                },
+                "merge2": {
+                  "version": "1.4.1"
+                },
+                "micromatch": {
+                  "version": "4.0.4",
+                  "dependencies": {
+                    "braces": {
+                      "version": "3.0.2",
+                      "dependencies": {
+                        "fill-range": {
+                          "version": "7.0.1",
+                          "dependencies": {
+                            "to-regex-range": {
+                              "version": "5.0.1",
+                              "dependencies": {
+                                "is-number": {
+                                  "version": "7.0.0"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "picomatch": {
+                      "version": "2.2.3"
+                    }
+                  }
+                },
+                "picomatch": {
+                  "version": "2.2.3"
+                }
+              }
+            },
+            "ignore": {
+              "version": "5.1.8"
+            },
+            "merge2": {
+              "version": "1.4.1"
+            },
+            "slash": {
+              "version": "3.0.0"
+            }
+          }
+        },
+        "reflect-metadata": {
+          "version": "0.1.13"
+        },
+        "strip-json-comments": {
+          "version": "3.1.1"
+        }
+      }
+    },
+    "@mikro-orm/migrations": {
+      "version": "4.5.3",
+      "dependencies": {
+        "@mikro-orm/knex": {
+          "version": "4.5.3"
+        },
+        "@types/umzug": {
+          "version": "2.3.0",
+          "dependencies": {
+            "@types/mongodb": {
+              "version": "3.6.12",
+              "dependencies": {
+                "@types/bson": {
+                  "version": "4.0.3",
+                  "dependencies": {
+                    "@types/node": {
+                      "version": "14.14.41"
+                    }
+                  }
+                },
+                "@types/node": {
+                  "version": "14.14.41"
+                }
+              }
+            },
+            "@types/sequelize": {
+              "version": "4.28.9",
+              "dependencies": {
+                "@types/bluebird": {
+                  "version": "3.5.33"
+                },
+                "@types/continuation-local-storage": {
+                  "version": "3.2.3",
+                  "dependencies": {
+                    "@types/node": {
+                      "version": "14.14.41"
+                    }
+                  }
+                },
+                "@types/lodash": {
+                  "version": "4.14.168"
+                },
+                "@types/validator": {
+                  "version": "13.1.3"
+                }
+              }
+            }
+          }
+        },
+        "fs-extra": {
+          "version": "9.1.0"
+        },
+        "knex": {
+          "version": "0.21.19",
+          "dependencies": {
+            "colorette": {
+              "version": "1.2.1"
+            },
+            "commander": {
+              "version": "6.2.1"
+            },
+            "esm": {
+              "version": "3.2.25"
+            },
+            "getopts": {
+              "version": "2.2.5"
+            },
+            "interpret": {
+              "version": "2.2.0"
+            },
+            "debug": {
+              "version": "4.3.1",
+              "dependencies": {
+                "ms": {
+                  "version": "2.1.2"
+                }
+              }
+            },
+            "pg-connection-string": {
+              "version": "2.4.0"
+            },
+            "liftoff": {
+              "version": "3.1.0",
+              "dependencies": {
+                "extend": {
+                  "version": "3.0.2"
+                },
+                "findup-sync": {
+                  "version": "3.0.0",
+                  "dependencies": {
+                    "detect-file": {
+                      "version": "1.0.0"
+                    },
+                    "micromatch": {
+                      "version": "3.1.10",
+                      "dependencies": {
+                        "arr-diff": {
+                          "version": "4.0.0"
+                        },
+                        "array-unique": {
+                          "version": "0.3.2"
+                        },
+                        "extglob": {
+                          "version": "2.0.4",
+                          "dependencies": {
+                            "array-unique": {
+                              "version": "0.3.2"
+                            },
+                            "expand-brackets": {
+                              "version": "2.1.4",
+                              "dependencies": {
+                                "debug": {
+                                  "version": "2.6.9"
+                                },
+                                "define-property": {
+                                  "version": "0.2.5"
+                                },
+                                "extend-shallow": {
+                                  "version": "2.0.1"
+                                },
+                                "posix-character-classes": {
+                                  "version": "0.1.1"
+                                },
+                                "regex-not": {
+                                  "version": "1.0.2"
+                                },
+                                "snapdragon": {
+                                  "version": "0.8.2"
+                                },
+                                "to-regex": {
+                                  "version": "3.0.2"
+                                }
+                              }
+                            },
+                            "extend-shallow": {
+                              "version": "2.0.1",
+                              "dependencies": {
+                                "is-extendable": {
+                                  "version": "0.1.1"
+                                }
+                              }
+                            },
+                            "define-property": {
+                              "version": "1.0.0",
+                              "dependencies": {
+                                "is-descriptor": {
+                                  "version": "1.0.2"
+                                }
+                              }
+                            },
+                            "fragment-cache": {
+                              "version": "0.2.1"
+                            },
+                            "regex-not": {
+                              "version": "1.0.2"
+                            },
+                            "snapdragon": {
+                              "version": "0.8.2"
+                            },
+                            "to-regex": {
+                              "version": "3.0.2"
+                            }
+                          }
+                        },
+                        "braces": {
+                          "version": "2.3.2",
+                          "dependencies": {
+                            "arr-flatten": {
+                              "version": "1.1.0"
+                            },
+                            "array-unique": {
+                              "version": "0.3.2"
+                            },
+                            "extend-shallow": {
+                              "version": "2.0.1",
+                              "dependencies": {
+                                "is-extendable": {
+                                  "version": "0.1.1"
+                                }
+                              }
+                            },
+                            "fill-range": {
+                              "version": "4.0.0",
+                              "dependencies": {
+                                "extend-shallow": {
+                                  "version": "2.0.1",
+                                  "dependencies": {
+                                    "is-extendable": {
+                                      "version": "0.1.1"
+                                    }
+                                  }
+                                },
+                                "to-regex-range": {
+                                  "version": "2.1.1",
+                                  "dependencies": {
+                                    "is-number": {
+                                      "version": "3.0.0"
+                                    },
+                                    "repeat-string": {
+                                      "version": "1.6.1"
+                                    }
+                                  }
+                                },
+                                "is-number": {
+                                  "version": "3.0.0",
+                                  "dependencies": {
+                                    "kind-of": {
+                                      "version": "3.2.2",
+                                      "dependencies": {
+                                        "is-buffer": {
+                                          "version": "1.1.6"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "repeat-string": {
+                                  "version": "1.6.1"
+                                }
+                              }
+                            },
+                            "isobject": {
+                              "version": "3.0.1"
+                            },
+                            "repeat-element": {
+                              "version": "1.1.4"
+                            },
+                            "snapdragon": {
+                              "version": "0.8.2"
+                            },
+                            "snapdragon-node": {
+                              "version": "2.1.1",
+                              "dependencies": {
+                                "isobject": {
+                                  "version": "3.0.1"
+                                },
+                                "define-property": {
+                                  "version": "1.0.0",
+                                  "dependencies": {
+                                    "is-descriptor": {
+                                      "version": "1.0.2"
+                                    }
+                                  }
+                                },
+                                "snapdragon-util": {
+                                  "version": "3.0.1",
+                                  "dependencies": {
+                                    "kind-of": {
+                                      "version": "3.2.2"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "split-string": {
+                              "version": "3.1.0",
+                              "dependencies": {
+                                "extend-shallow": {
+                                  "version": "3.0.2",
+                                  "dependencies": {
+                                    "assign-symbols": {
+                                      "version": "1.0.0"
+                                    },
+                                    "is-extendable": {
+                                      "version": "1.0.1",
+                                      "dependencies": {
+                                        "is-plain-object": {
+                                          "version": "2.0.4"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "to-regex": {
+                              "version": "3.0.2"
+                            }
+                          }
+                        },
+                        "define-property": {
+                          "version": "2.0.2",
+                          "dependencies": {
+                            "is-descriptor": {
+                              "version": "1.0.2",
+                              "dependencies": {
+                                "is-accessor-descriptor": {
+                                  "version": "1.0.0",
+                                  "dependencies": {
+                                    "kind-of": {
+                                      "version": "6.0.3"
+                                    }
+                                  }
+                                },
+                                "is-data-descriptor": {
+                                  "version": "1.0.0",
+                                  "dependencies": {
+                                    "kind-of": {
+                                      "version": "6.0.3"
+                                    }
+                                  }
+                                },
+                                "kind-of": {
+                                  "version": "6.0.3"
+                                }
+                              }
+                            },
+                            "isobject": {
+                              "version": "3.0.1"
+                            }
+                          }
+                        },
+                        "extend-shallow": {
+                          "version": "3.0.2",
+                          "dependencies": {
+                            "assign-symbols": {
+                              "version": "1.0.0"
+                            },
+                            "is-extendable": {
+                              "version": "1.0.1",
+                              "dependencies": {
+                                "is-plain-object": {
+                                  "version": "2.0.4"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "kind-of": {
+                          "version": "6.0.3"
+                        },
+                        "fragment-cache": {
+                          "version": "0.2.1",
+                          "dependencies": {
+                            "map-cache": {
+                              "version": "0.2.2"
+                            }
+                          }
+                        },
+                        "nanomatch": {
+                          "version": "1.2.13",
+                          "dependencies": {
+                            "arr-diff": {
+                              "version": "4.0.0"
+                            },
+                            "array-unique": {
+                              "version": "0.3.2"
+                            },
+                            "fragment-cache": {
+                              "version": "0.2.1"
+                            },
+                            "is-windows": {
+                              "version": "1.0.2"
+                            },
+                            "define-property": {
+                              "version": "2.0.2",
+                              "dependencies": {
+                                "is-descriptor": {
+                                  "version": "1.0.2"
+                                },
+                                "isobject": {
+                                  "version": "3.0.1"
+                                }
+                              }
+                            },
+                            "extend-shallow": {
+                              "version": "3.0.2",
+                              "dependencies": {
+                                "assign-symbols": {
+                                  "version": "1.0.0"
+                                },
+                                "is-extendable": {
+                                  "version": "1.0.1",
+                                  "dependencies": {
+                                    "is-plain-object": {
+                                      "version": "2.0.4"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "kind-of": {
+                              "version": "6.0.3"
+                            },
+                            "object.pick": {
+                              "version": "1.3.0"
+                            },
+                            "regex-not": {
+                              "version": "1.0.2"
+                            },
+                            "snapdragon": {
+                              "version": "0.8.2"
+                            },
+                            "to-regex": {
+                              "version": "3.0.2"
+                            }
+                          }
+                        },
+                        "object.pick": {
+                          "version": "1.3.0"
+                        },
+                        "regex-not": {
+                          "version": "1.0.2",
+                          "dependencies": {
+                            "extend-shallow": {
+                              "version": "3.0.2",
+                              "dependencies": {
+                                "assign-symbols": {
+                                  "version": "1.0.0"
+                                },
+                                "is-extendable": {
+                                  "version": "1.0.1",
+                                  "dependencies": {
+                                    "is-plain-object": {
+                                      "version": "2.0.4"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "safe-regex": {
+                              "version": "1.1.0",
+                              "dependencies": {
+                                "ret": {
+                                  "version": "0.1.15"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "snapdragon": {
+                          "version": "0.8.2",
+                          "dependencies": {
+                            "base": {
+                              "version": "0.11.2",
+                              "dependencies": {
+                                "define-property": {
+                                  "version": "1.0.0",
+                                  "dependencies": {
+                                    "is-descriptor": {
+                                      "version": "1.0.2"
+                                    }
+                                  }
+                                },
+                                "cache-base": {
+                                  "version": "1.0.1",
+                                  "dependencies": {
+                                    "collection-visit": {
+                                      "version": "1.0.0",
+                                      "dependencies": {
+                                        "map-visit": {
+                                          "version": "1.0.0",
+                                          "dependencies": {
+                                            "object-visit": {
+                                              "version": "1.0.1"
+                                            }
+                                          }
+                                        },
+                                        "object-visit": {
+                                          "version": "1.0.1",
+                                          "dependencies": {
+                                            "isobject": {
+                                              "version": "3.0.1"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "component-emitter": {
+                                      "version": "1.3.0"
+                                    },
+                                    "get-value": {
+                                      "version": "2.0.6"
+                                    },
+                                    "has-value": {
+                                      "version": "1.0.0",
+                                      "dependencies": {
+                                        "get-value": {
+                                          "version": "2.0.6"
+                                        },
+                                        "has-values": {
+                                          "version": "1.0.0",
+                                          "dependencies": {
+                                            "kind-of": {
+                                              "version": "4.0.0",
+                                              "dependencies": {
+                                                "is-buffer": {
+                                                  "version": "1.1.6"
+                                                }
+                                              }
+                                            },
+                                            "is-number": {
+                                              "version": "3.0.0"
+                                            }
+                                          }
+                                        },
+                                        "isobject": {
+                                          "version": "3.0.1"
+                                        }
+                                      }
+                                    },
+                                    "isobject": {
+                                      "version": "3.0.1"
+                                    },
+                                    "set-value": {
+                                      "version": "2.0.1",
+                                      "dependencies": {
+                                        "extend-shallow": {
+                                          "version": "2.0.1"
+                                        },
+                                        "is-extendable": {
+                                          "version": "0.1.1"
+                                        },
+                                        "is-plain-object": {
+                                          "version": "2.0.4"
+                                        },
+                                        "split-string": {
+                                          "version": "3.1.0"
+                                        }
+                                      }
+                                    },
+                                    "to-object-path": {
+                                      "version": "0.3.0",
+                                      "dependencies": {
+                                        "kind-of": {
+                                          "version": "3.2.2"
+                                        }
+                                      }
+                                    },
+                                    "union-value": {
+                                      "version": "1.0.1",
+                                      "dependencies": {
+                                        "arr-union": {
+                                          "version": "3.1.0"
+                                        },
+                                        "get-value": {
+                                          "version": "2.0.6"
+                                        },
+                                        "is-extendable": {
+                                          "version": "0.1.1"
+                                        },
+                                        "set-value": {
+                                          "version": "2.0.1"
+                                        }
+                                      }
+                                    },
+                                    "unset-value": {
+                                      "version": "1.0.0",
+                                      "dependencies": {
+                                        "isobject": {
+                                          "version": "3.0.1"
+                                        },
+                                        "has-value": {
+                                          "version": "0.3.1",
+                                          "dependencies": {
+                                            "get-value": {
+                                              "version": "2.0.6"
+                                            },
+                                            "isobject": {
+                                              "version": "2.1.0",
+                                              "dependencies": {
+                                                "isarray": {
+                                                  "version": "1.0.0"
+                                                }
+                                              }
+                                            },
+                                            "has-values": {
+                                              "version": "0.1.4"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "class-utils": {
+                                  "version": "0.3.6",
+                                  "dependencies": {
+                                    "arr-union": {
+                                      "version": "3.1.0"
+                                    },
+                                    "define-property": {
+                                      "version": "0.2.5"
+                                    },
+                                    "isobject": {
+                                      "version": "3.0.1"
+                                    },
+                                    "static-extend": {
+                                      "version": "0.1.2",
+                                      "dependencies": {
+                                        "define-property": {
+                                          "version": "0.2.5"
+                                        },
+                                        "object-copy": {
+                                          "version": "0.1.0",
+                                          "dependencies": {
+                                            "copy-descriptor": {
+                                              "version": "0.1.1"
+                                            },
+                                            "define-property": {
+                                              "version": "0.2.5"
+                                            },
+                                            "kind-of": {
+                                              "version": "3.2.2"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "component-emitter": {
+                                  "version": "1.3.0"
+                                },
+                                "isobject": {
+                                  "version": "3.0.1"
+                                },
+                                "mixin-deep": {
+                                  "version": "1.3.2",
+                                  "dependencies": {
+                                    "for-in": {
+                                      "version": "1.0.2"
+                                    },
+                                    "is-extendable": {
+                                      "version": "1.0.1",
+                                      "dependencies": {
+                                        "is-plain-object": {
+                                          "version": "2.0.4"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "pascalcase": {
+                                  "version": "0.1.1"
+                                }
+                              }
+                            },
+                            "debug": {
+                              "version": "2.6.9",
+                              "dependencies": {
+                                "ms": {
+                                  "version": "2.0.0"
+                                }
+                              }
+                            },
+                            "define-property": {
+                              "version": "0.2.5",
+                              "dependencies": {
+                                "is-descriptor": {
+                                  "version": "0.1.6",
+                                  "dependencies": {
+                                    "is-accessor-descriptor": {
+                                      "version": "0.1.6",
+                                      "dependencies": {
+                                        "kind-of": {
+                                          "version": "3.2.2",
+                                          "dependencies": {
+                                            "is-buffer": {
+                                              "version": "1.1.6"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "is-data-descriptor": {
+                                      "version": "0.1.4",
+                                      "dependencies": {
+                                        "kind-of": {
+                                          "version": "3.2.2",
+                                          "dependencies": {
+                                            "is-buffer": {
+                                              "version": "1.1.6"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "kind-of": {
+                                      "version": "5.1.0"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "extend-shallow": {
+                              "version": "2.0.1"
+                            },
+                            "map-cache": {
+                              "version": "0.2.2"
+                            },
+                            "source-map": {
+                              "version": "0.5.7"
+                            },
+                            "source-map-resolve": {
+                              "version": "0.5.3",
+                              "dependencies": {
+                                "atob": {
+                                  "version": "2.1.2"
+                                },
+                                "decode-uri-component": {
+                                  "version": "0.2.0"
+                                },
+                                "resolve-url": {
+                                  "version": "0.2.1"
+                                },
+                                "source-map-url": {
+                                  "version": "0.4.1"
+                                },
+                                "urix": {
+                                  "version": "0.1.0"
+                                }
+                              }
+                            },
+                            "use": {
+                              "version": "3.1.1"
+                            }
+                          }
+                        },
+                        "to-regex": {
+                          "version": "3.0.2",
+                          "dependencies": {
+                            "regex-not": {
+                              "version": "1.0.2"
+                            },
+                            "safe-regex": {
+                              "version": "1.1.0"
+                            },
+                            "define-property": {
+                              "version": "2.0.2",
+                              "dependencies": {
+                                "is-descriptor": {
+                                  "version": "1.0.2"
+                                },
+                                "isobject": {
+                                  "version": "3.0.1"
+                                }
+                              }
+                            },
+                            "extend-shallow": {
+                              "version": "3.0.2",
+                              "dependencies": {
+                                "assign-symbols": {
+                                  "version": "1.0.0"
+                                },
+                                "is-extendable": {
+                                  "version": "1.0.1",
+                                  "dependencies": {
+                                    "is-plain-object": {
+                                      "version": "2.0.4"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "is-glob": {
+                      "version": "4.0.1"
+                    },
+                    "resolve-dir": {
+                      "version": "1.0.1",
+                      "dependencies": {
+                        "expand-tilde": {
+                          "version": "2.0.2"
+                        },
+                        "global-modules": {
+                          "version": "1.0.0",
+                          "dependencies": {
+                            "global-prefix": {
+                              "version": "1.0.2",
+                              "dependencies": {
+                                "expand-tilde": {
+                                  "version": "2.0.2"
+                                },
+                                "homedir-polyfill": {
+                                  "version": "1.0.3"
+                                },
+                                "ini": {
+                                  "version": "1.3.8"
+                                },
+                                "is-windows": {
+                                  "version": "1.0.2"
+                                },
+                                "which": {
+                                  "version": "1.3.1",
+                                  "dependencies": {
+                                    "isexe": {
+                                      "version": "2.0.0"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "is-windows": {
+                              "version": "1.0.2"
+                            },
+                            "resolve-dir": {
+                              "version": "1.0.1"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "fined": {
+                  "version": "1.2.0",
+                  "dependencies": {
+                    "expand-tilde": {
+                      "version": "2.0.2",
+                      "dependencies": {
+                        "homedir-polyfill": {
+                          "version": "1.0.3"
+                        }
+                      }
+                    },
+                    "is-plain-object": {
+                      "version": "2.0.4"
+                    },
+                    "object.defaults": {
+                      "version": "1.1.0",
+                      "dependencies": {
+                        "array-each": {
+                          "version": "1.0.1"
+                        },
+                        "array-slice": {
+                          "version": "1.1.0"
+                        },
+                        "for-own": {
+                          "version": "1.0.0"
+                        },
+                        "isobject": {
+                          "version": "3.0.1"
+                        }
+                      }
+                    },
+                    "object.pick": {
+                      "version": "1.3.0",
+                      "dependencies": {
+                        "isobject": {
+                          "version": "3.0.1"
+                        }
+                      }
+                    },
+                    "parse-filepath": {
+                      "version": "1.0.2",
+                      "dependencies": {
+                        "is-absolute": {
+                          "version": "1.0.0",
+                          "dependencies": {
+                            "is-relative": {
+                              "version": "1.0.0",
+                              "dependencies": {
+                                "is-unc-path": {
+                                  "version": "1.0.0",
+                                  "dependencies": {
+                                    "unc-path-regex": {
+                                      "version": "0.1.2"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "is-windows": {
+                              "version": "1.0.2"
+                            }
+                          }
+                        },
+                        "map-cache": {
+                          "version": "0.2.2"
+                        },
+                        "path-root": {
+                          "version": "0.1.1",
+                          "dependencies": {
+                            "path-root-regex": {
+                              "version": "0.1.2"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "flagged-respawn": {
+                  "version": "1.0.1"
+                },
+                "is-plain-object": {
+                  "version": "2.0.4",
+                  "dependencies": {
+                    "isobject": {
+                      "version": "3.0.1"
+                    }
+                  }
+                },
+                "object.map": {
+                  "version": "1.0.1",
+                  "dependencies": {
+                    "for-own": {
+                      "version": "1.0.0",
+                      "dependencies": {
+                        "for-in": {
+                          "version": "1.0.2"
+                        }
+                      }
+                    },
+                    "make-iterator": {
+                      "version": "1.0.1",
+                      "dependencies": {
+                        "kind-of": {
+                          "version": "6.0.3"
+                        }
+                      }
+                    }
+                  }
+                },
+                "rechoir": {
+                  "version": "0.6.2",
+                  "dependencies": {
+                    "resolve": {
+                      "version": "1.20.0"
+                    }
+                  }
+                },
+                "resolve": {
+                  "version": "1.20.0",
+                  "dependencies": {
+                    "is-core-module": {
+                      "version": "2.2.0",
+                      "dependencies": {
+                        "has": {
+                          "version": "1.0.3",
+                          "dependencies": {
+                            "function-bind": {
+                              "version": "1.1.1"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "path-parse": {
+                      "version": "1.0.6"
+                    }
+                  }
+                }
+              }
+            },
+            "lodash": {
+              "version": "4.17.21"
+            },
+            "tarn": {
+              "version": "3.0.1"
+            },
+            "tildify": {
+              "version": "2.0.0"
+            },
+            "v8flags": {
+              "version": "3.2.0",
+              "dependencies": {
+                "homedir-polyfill": {
+                  "version": "1.0.3",
+                  "dependencies": {
+                    "parse-passwd": {
+                      "version": "1.0.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "umzug": {
+          "version": "2.3.0",
+          "dependencies": {
+            "bluebird": {
+              "version": "3.7.2"
+            }
+          }
+        }
+      }
+    },
+    "@mikro-orm/postgresql": {
+      "version": "4.5.3",
+      "dependencies": {
+        "@mikro-orm/knex": {
+          "version": "4.5.3"
+        },
+        "pg": {
+          "version": "8.5.1",
+          "dependencies": {
+            "buffer-writer": {
+              "version": "2.0.0"
+            },
+            "packet-reader": {
+              "version": "1.0.0"
+            },
+            "pg-connection-string": {
+              "version": "2.5.0"
+            },
+            "pg-pool": {
+              "version": "3.3.0"
+            },
+            "pg-protocol": {
+              "version": "1.5.0"
+            },
+            "pg-types": {
+              "version": "2.2.0"
+            },
+            "pgpass": {
+              "version": "1.0.4"
+            }
+          }
+        }
+      }
+    },
+    "pg": {
+      "version": "8.6.0",
+      "dependencies": {
+        "buffer-writer": {
+          "version": "2.0.0"
+        },
+        "packet-reader": {
+          "version": "1.0.0"
+        },
+        "pg-connection-string": {
+          "version": "2.5.0"
+        },
+        "pg-pool": {
+          "version": "3.3.0"
+        },
+        "pg-protocol": {
+          "version": "1.5.0"
+        },
+        "pg-types": {
+          "version": "2.2.0",
+          "dependencies": {
+            "pg-int8": {
+              "version": "1.0.1"
+            },
+            "postgres-array": {
+              "version": "2.0.0"
+            },
+            "postgres-bytea": {
+              "version": "1.0.0"
+            },
+            "postgres-date": {
+              "version": "1.0.7"
+            },
+            "postgres-interval": {
+              "version": "1.2.0",
+              "dependencies": {
+                "xtend": {
+                  "version": "4.0.2"
+                }
+              }
+            }
+          }
+        },
+        "pgpass": {
+          "version": "1.0.4",
+          "dependencies": {
+            "split2": {
+              "version": "3.2.2",
+              "dependencies": {
+                "readable-stream": {
+                  "version": "3.6.0",
+                  "dependencies": {
+                    "inherits": {
+                      "version": "2.0.4"
+                    },
+                    "string_decoder": {
+                      "version": "1.3.0",
+                      "dependencies": {
+                        "safe-buffer": {
+                          "version": "5.2.1"
+                        }
+                      }
+                    },
+                    "util-deprecate": {
+                      "version": "1.0.2"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
