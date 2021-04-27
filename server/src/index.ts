@@ -1,7 +1,5 @@
 import "reflect-metadata";
-import { MikroORM } from "@mikro-orm/core";
 import { COOKIE_NAME, __prod__ } from "./constants";
-import microConfig from "./mikro-orm.config";
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
 import { buildSchema } from "type-graphql";
@@ -11,11 +9,25 @@ import Redis from "ioredis";
 import session from "express-session";
 import connectRedis from "connect-redis";
 import cors from "cors";
-
+import { createConnection } from "typeorm";
+import { User } from "./entities/User";
+import { Post } from "./entities/Posts";
+import path from "path";
+import { Updoot } from "./entities/Updoot";
 const main = async () => {
-  const orm = await MikroORM.init(microConfig);
-  await orm.getMigrator().up();
+  const conn = await createConnection({
+    type: "postgres",
+    database: "lireddit2",
+    username: "postgres",
+    password: "root",
+    logging: true,
+    synchronize: true,
+    migrations: [path.join(__dirname, "./migrations/*")],
+    entities: [Post, User, Updoot],
+  });
+  await conn.runMigrations();
 
+  // await Post.delete({});
   const app = express();
   const RedisStore = connectRedis(session);
   const redis = new Redis();
@@ -52,7 +64,6 @@ const main = async () => {
     }),
 
     context: ({ req, res }) => ({
-      em: orm.em,
       req,
       res,
       redis,
